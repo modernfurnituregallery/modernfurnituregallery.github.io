@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Contact Modern Furniture Gallery – custom designer & modern furniture showroom in Mississauga. Visit us at 7025 Tomken Rd #19. Open 7 days. Get a custom furniture quote. Serving Toronto, Brampton, Oakville & GTA."/>
-  <meta name="keywords" content="contact furniture store mississauga, custom furniture showroom, modern furniture gallery, furniture quote, designer furniture contact, custom furniture mississauga, best furniture toronto, furniture showroom mississauga, furniture store hours, furniture design consultation"/>
+  <meta name="description" content="Visit Modern Furniture Gallery at 7025 Tomken Rd #19, Mississauga. Custom furniture & restaurant booth showroom open 7 days. Call (905) 956-9200. Serving Toronto, Brampton, Oakville & all of the GTA."/>
+  <meta name="keywords" content="furniture store Mississauga contact, custom furniture showroom Mississauga, furniture quote GTA, Modern Furniture Gallery hours"/>
   <link rel="canonical" href="https://www.modernfurnituregallery.ca/contact.html"/>
-  <title>Contact Modern Furniture Gallery | Custom Designer Furniture Showroom Mississauga</title>
-  <meta name="description" content="Contact Modern Furniture Gallery – best custom designer & modern furniture showroom in Mississauga. Visit us at 7025 Tomken Rd. Open 7 days. Call (905) 956-9200 for custom furniture quotes. Serving Mississauga, Toronto, Brampton & GTA."/>
+  <title>Contact | Furniture Showroom Mississauga | Modern Furniture Gallery – Custom Sofas & Restaurant Booths GTA</title>
+  <meta name="description" content="Visit Modern Furniture Gallery at 7025 Tomken Rd #19, Mississauga. Open 7 days a week. Call (905) 956-9200 or get a custom furniture quote. Serving Mississauga, Brampton, Toronto and the GTA."/>
+  <meta name="keywords" content="furniture store Mississauga contact, custom furniture showroom Mississauga, furniture quote GTA, Modern Furniture Gallery hours"/>
   <link rel="canonical" href="https://www.modernfurnituregallery.ca/contact.html"/>
   <meta property="og:title" content="Contact Us | Furniture Showroom Mississauga | Modern Furniture Gallery"/>
   <meta property="og:description" content="Visit Modern Furniture Gallery at 7025 Tomken Rd #19, Mississauga. Open 7 days a week. Call (905) 956-9200 or get a custom furniture quote. Serving Mississauga, Brampton, Toronto and the GTA."/>
@@ -67,10 +68,11 @@
         <div class="contact-form-col">
           <h2>Contact Us</h2>
           <p class="form-required-note"><span class="req">*</span> Indicates required field</p>
-          <form id="contactForm" action="https://formspree.io/f/xzzbbwqd" method="POST">
-            <input type="hidden" name="_replyto" value="kulwinderbassi5@gmail.com"/>
-            <input type="hidden" name="_subject" value="New enquiry – Modern Furniture Gallery website"/>
-            <input type="text" name="_gotcha" style="display:none"/>
+          <form id="contactForm">
+            <input type="hidden" name="access_key" value="1d688d61-2c9a-450a-a7b9-8afde26c04c3"/>
+            <input type="hidden" name="subject" value="New enquiry – Modern Furniture Gallery website"/>
+            <input type="hidden" name="from_name" value="Modern Furniture Gallery Website"/>
+            <input type="checkbox" name="botcheck" style="display:none"/>
             <div class="form-group name-group">
               <label>Name <span class="req">*</span></label>
               <div class="name-inputs">
@@ -97,7 +99,8 @@
               <textarea name="message" class="form-input form-textarea" rows="6" required></textarea>
             </div>
             <button type="submit" class="btn btn-dark" id="submitBtn">Submit</button>
-            <p class="form-success" id="formSuccess" style="display:none;">Thank you! Your message has been sent. We'll be in touch soon.</p>
+            <p class="form-success" id="formSuccess" style="display:none; color: green; margin-top: 12px;">Thank you! Your message has been sent. We'll be in touch soon.</p>
+            <p class="form-error" id="formError" style="display:none; color: red; margin-top: 12px;">Something went wrong. Please try again or call us directly.</p>
           </form>
         </div>
 
@@ -143,15 +146,50 @@
   </footer>
 
   <script>
+    // Mobile nav
     document.getElementById('hamburgerBtn').addEventListener('click', function() {
       var nav = document.getElementById('mobileNav');
       nav.classList.toggle('open');
     });
-    // Close menu when a link is clicked
     document.querySelectorAll('#mobileNav a').forEach(function(link) {
       link.addEventListener('click', function() {
         document.getElementById('mobileNav').classList.remove('open');
       });
+    });
+
+    // Web3Forms submission
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const successMsg = document.getElementById('formSuccess');
+      const errorMsg = document.getElementById('formError');
+
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      successMsg.style.display = 'none';
+      errorMsg.style.display = 'none';
+
+      const formData = new FormData(this);
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+        const data = await response.json();
+
+        if (data.success) {
+          successMsg.style.display = 'block';
+          this.reset();
+        } else {
+          errorMsg.style.display = 'block';
+        }
+      } catch (error) {
+        errorMsg.style.display = 'block';
+      }
+
+      btn.textContent = 'Submit';
+      btn.disabled = false;
     });
   </script>
 </body>
