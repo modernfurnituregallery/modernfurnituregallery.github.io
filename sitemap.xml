@@ -1,34 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap for Modern Furniture Gallery - modernfurnituregallery.ca
+  Custom furniture, reupholstery, restaurant booths - Mississauga / GTA / Toronto
+  Last updated: 2026-03-23
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOME PAGE — Primary landing page for all brand + local searches -->
+  <!-- Targets: custom furniture Toronto, furniture showroom Mississauga, Italian furniture GTA,
+       Canadian furniture, luxury furniture store near me, furniture gallery Mississauga -->
   <url>
-    <loc>https://www.modernfurnituregallery.ca/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <loc>https://modernfurnituregallery.ca/</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- SHOP PAGE — Core product discovery page -->
+  <!-- Targets: custom furniture Toronto, custom sofas GTA, modern furniture Toronto,
+       luxury furniture Mississauga, Italian furniture Canada, furniture store Mississauga,
+       high end furniture GTA, designer furniture Toronto -->
   <url>
-    <loc>https://www.modernfurnituregallery.ca/shop.html</loc>
-    <lastmod>2026-03-05</lastmod>
+    <loc>https://modernfurnituregallery.ca/shop.html</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+
+  <!-- OUR GUARANTEE PAGE — Trust + conversion page -->
+  <!-- Targets: custom furniture warranty Canada, quality furniture guarantee,
+       furniture craftsmanship Toronto, handmade furniture GTA -->
   <url>
-    <loc>https://www.modernfurnituregallery.ca/our-guarantee.html</loc>
-    <lastmod>2026-03-05</lastmod>
+    <loc>https://modernfurnituregallery.ca/our-guarantee.html</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
+
+  <!-- ABOUT US PAGE — Local SEO + brand trust -->
+  <!-- Targets: furniture showroom Mississauga, furniture store 7025 Tomken Rd,
+       Italian and Canadian furniture gallery, about Modern Furniture Gallery -->
   <url>
-    <loc>https://www.modernfurnituregallery.ca/contact.html</loc>
-    <lastmod>2026-03-05</lastmod>
+    <loc>https://modernfurnituregallery.ca/about-us.html</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
+
+  <!-- CONTACT PAGE — Local SEO + foot traffic driver -->
+  <!-- Targets: furniture store Mississauga contact, custom furniture showroom visit,
+       furniture store near me Mississauga, book furniture consultation GTA -->
   <url>
-    <loc>https://www.modernfurnituregallery.ca/about-us.html</loc>
-    <lastmod>2026-03-05</lastmod>
+    <loc>https://modernfurnituregallery.ca/contact.html</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
+
 </urlset>
