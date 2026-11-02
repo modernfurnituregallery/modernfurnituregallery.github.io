@@ -372,3 +372,100 @@ body.lb-lock { overflow: hidden; }
 .pg-info .pg-kind + .pg-count { margin-top: 0; }
 .faq-item p a { font-weight: 500; }
 @media (max-width: 860px) { .seo-grid { grid-template-columns: 1fr; } }
+
+/* ================================================================
+   Original Modern Furniture Gallery look (restored)
+   Lato 900 headings, black & white palette, uppercase details
+   ================================================================ */
+:root {
+  --ink: #1a1a1a; --stone: #555; --teal: #1a1a1a; --teal-dark: #333;
+  --serif: "Lato", Arial, sans-serif; --sans: "Lato", Arial, sans-serif;
+  --linen: #f8f8f8; --line: #e5e5e5;
+}
+body { font-size: 16px; color: #333; }
+h1, h2, h3 { font-weight: 900; letter-spacing: .3px; color: var(--ink); }
+h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
+h3 { font-weight: 700; font-size: 1.15rem; }
+
+/* header: bold uppercase wordmark + uppercase nav */
+.site-logo { font-family: var(--sans); font-weight: 900; font-size: 19px; text-transform: uppercase; letter-spacing: .3px; }
+.desktop-nav a { font-size: 13px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: .5px; }
+.desktop-nav .active a, .desktop-nav a:hover { color: var(--ink); }
+.desktop-nav .active a { border-bottom-color: var(--ink); }
+.mobile-nav li a { text-transform: uppercase; font-weight: 700; font-size: 15px; letter-spacing: .5px; }
+
+/* buttons: original black, uppercase, tracked */
+.btn { font: 700 12.5px/1 var(--sans); text-transform: uppercase; letter-spacing: 1px; padding: 15px 26px; border-radius: 0; }
+.btn-dark, .btn-primary { background: #1a1a1a; color: #fff; }
+.btn-dark:hover, .btn-primary:hover { background: #333; color: #fff; }
+.btn-outline { border: 2px solid #1a1a1a; }
+.btn-light { background: #fff; color: #1a1a1a; }
+.header-call { font-size: 12.5px; }
+
+/* hero: let the photo breathe, title in the original banner style */
+.hero::after { background: linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.62) 100%); }
+.hero h1 { font-size: clamp(1.9rem, 4.6vw, 3.4rem); text-transform: uppercase; letter-spacing: 3px; max-width: none; color: #fff; }
+.hero-tagline { font-family: "Lora", Georgia, serif; font-style: italic; }
+.page-banner h1 { text-transform: uppercase; letter-spacing: 3px; font-size: clamp(1.7rem, 4vw, 3rem); }
+
+/* Made in Canada on light grey with the round black social icons */
+.section-grey { background: #f8f8f8; border-bottom: 1px solid var(--line); }
+.split-text h2 { font-size: clamp(2rem, 3.4vw, 2.7rem); }
+.split-text p { color: #555; }
+.social-icon { background: #1a1a1a; border: 0; color: #fff; width: 40px; height: 40px; }
+.social-icon:hover { background: #444; color: #fff; }
+
+/* Wholesaler Pricing: full-height edge-to-edge photo row (original layout) */
+.bleed-row { display: grid; grid-template-columns: 38% 62%; background: #f8f8f8; }
+.bleed-text { order: -1; display: flex; align-items: center; padding: clamp(36px, 5vw, 64px); border-right: 1px solid var(--line); }
+.bleed-text h2 { font-size: clamp(2rem, 3.2vw, 2.6rem); }
+.bleed-text p { color: #555; }
+.bleed-img img { width: 100%; height: 100%; min-height: 460px; object-fit: cover; }
+
+/* Why choose us: original dark section with emoji icons and bordered boxes */
+.why-us-section { background: #1a1a1a; }
+.why-us-section h2 { color: #fff; text-align: center; text-transform: uppercase; letter-spacing: 1.5px; font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
+.why-grid { gap: 20px; border-top: 0; }
+.why-item, .why-item:not(:nth-child(3n+1)), .why-item:nth-child(2n) { border: 1px solid #333; padding: 30px 24px; text-align: center; }
+.why-icon { font-size: 30px; line-height: 1; width: auto; height: auto; margin: 0 0 14px; color: inherit; }
+.why-item h3 { color: #fff; text-transform: uppercase; letter-spacing: 1px; font-size: 15px; }
+.why-item p { color: #bbb; font-size: 14.5px; }
+
+/* commercial feature list keeps the emoji icons */
+.cf-icon { font-size: 28px; line-height: 1.2; }
+.cf-item h3 { font-size: 1.1rem; }
+
+/* collections, FAQ, service list, CTA */
+.collection-card span { font-family: var(--sans); font-weight: 700; text-transform: uppercase; letter-spacing: .8px; font-size: 14px; }
+.collection-nav a.current { background: #1a1a1a; border-color: #1a1a1a; }
+.collection-nav a:hover { border-color: #1a1a1a; color: #1a1a1a; }
+.faq-item summary { font-family: var(--sans); font-weight: 700; font-size: 1.08rem; }
+.faq-item summary::after { border-color: #1a1a1a; }
+.service-links strong { font-family: var(--sans); font-weight: 700; font-size: 1.05rem; text-transform: uppercase; letter-spacing: .6px; }
+.service-links a:hover strong { color: #555; }
+.seo-grid .areas { border-left-color: #1a1a1a; }
+.cta-band { background: #1a1a1a; }
+.cta-band p { font-family: var(--sans); font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; font-size: clamp(1.2rem, 2.2vw, 1.7rem); }
+.pg-info h2 { font-size: clamp(1.7rem, 2.6vw, 2.2rem); }
+.pg-info .product-price { color: #1a1a1a; }
+.pg-kind { text-transform: uppercase; letter-spacing: .8px; font-size: 12.5px; color: #777; }
+.shop-note { font-family: "Lora", Georgia, serif; }
+.about-text p:first-child { font-family: "Lora", Georgia, serif; font-style: italic; font-weight: 400; }
+.v-thumb.on { border-color: #1a1a1a; }
+.footer-brand { font-family: var(--sans); font-weight: 900; text-transform: uppercase; font-size: 1.15rem; letter-spacing: .3px; }
+.site-footer { background: #111; }
+.footer-col h3 { text-transform: uppercase; letter-spacing: 1px; font-size: 13px; }
+.contact-form-col h1 { text-transform: uppercase; letter-spacing: 1px; font-size: clamp(1.8rem, 3vw, 2.3rem); }
+:focus-visible { outline-color: #1a1a1a; }
+
+@media (max-width: 860px) {
+  .bleed-row { grid-template-columns: 1fr; }
+  .bleed-text { order: 0; border-right: 0; }
+  .bleed-img img { min-height: 0; height: 300px; }
+  .why-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .why-grid { grid-template-columns: 1fr; gap: 12px; }
+  .site-logo { font-size: 15px; }
+  .hero h1 { letter-spacing: 2px; }
+}
