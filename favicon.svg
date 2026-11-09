@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#145A5A"/><text x="32" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#fff">M</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#111"/>
+<polygon points="11.72,3.80 52.28,3.80 58.00,32.00 52.28,60.20 11.72,60.20 6.00,32.00" fill="#D52B2B"/>
+<polygon points="12.66,5.49 51.34,5.49 56.13,32.00 51.34,58.51 12.66,58.51 7.87,32.00" fill="#fff"/>
+<polygon points="27.58,5.49 36.42,5.49 32.00,22.98" fill="#D52B2B"/>
+<polygon points="27.58,58.51 36.42,58.51 32.00,41.02" fill="#D52B2B"/>
+<polygon points="20.82,11.13 26.54,32.00 20.82,52.87 17.70,32.00" fill="#D52B2B"/>
+<polygon points="43.18,11.13 46.30,32.00 43.18,52.87 37.46,32.00" fill="#D52B2B"/>
+<rect x="7.87" y="31.61" width="48.26" height="0.79" fill="#D52B2B"/></svg>
