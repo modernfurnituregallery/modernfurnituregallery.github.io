@@ -486,3 +486,9 @@ body.lb-lock { overflow: hidden; }
 
 /* Title Case for every section, card and step title */
 h1, h2, h3, .cat-tile b, .ov-card b, .booth-types li, .product-group-title { text-transform: capitalize; }
+
+/* linked option cards */
+a.opt { display: block; color: inherit; text-decoration: none; transition: border-color .2s, box-shadow .2s; }
+a.opt:hover { border-color: var(--teal, #0e5a58); box-shadow: 0 6px 18px rgba(14,90,88,.08); }
+a.opt h3 { color: var(--teal, #0e5a58); }
+.areas a, .areas-light a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
