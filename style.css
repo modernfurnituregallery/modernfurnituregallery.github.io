@@ -549,3 +549,5 @@ a.opt h3 { color: var(--teal, #0e5a58); }
 @media (max-width: 640px) { .post-grid { grid-template-columns: 1fr; } .post { font-size: 17px; } }
 .spec-table.cmp th[scope="row"] { width: 26%; }
 .spec-table.cmp thead th { width: auto; background: var(--teal-soft); }
+.origin-note { font-size: 13px; opacity: .8; margin-top: 6px; }
+div.opt { cursor: default; }
