@@ -508,3 +508,17 @@ a.opt h3 { color: var(--teal, #0e5a58); }
   .desktop-nav, .header-cta { display: none; }
   .hamburger { display: block; }
 }
+/* SEO copy blocks, quick facts, spec table */
+.seo-copy h2 { margin-bottom: 16px; }
+.seo-copy h3 { margin: 28px 0 12px; font-size: 1.15rem; }
+.seo-copy p { margin: 0 0 14px; }
+.seo-copy .tick-list { margin-bottom: 8px; }
+.facts { margin: 20px 0 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+.facts > div { display: grid; grid-template-columns: 200px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.facts dt { font-weight: 600; }
+.facts dd { margin: 0; }
+.spec-table { width: 100%; border-collapse: collapse; margin: 18px 0 8px; }
+.spec-table th, .spec-table td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.spec-table th { width: 42%; font-weight: 600; }
+.spec-table tr:nth-child(odd) { background: rgba(0,0,0,.025); }
+@media (max-width: 640px) { .facts > div { grid-template-columns: 1fr; gap: 2px; } .spec-table th { width: 46%; } }
